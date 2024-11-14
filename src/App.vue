@@ -16,8 +16,16 @@
 <script>
 // Importă componenta AppBar pentru a fi utilizată în componenta principală
 import AppBar from './components/AppBar.vue';
+import {useRouter} from "vue-router";
 
 export default {
+  created() {
+    const router = useRouter();
+    const redirectPath = new URLSearchParams(window.location.search).get('redirect');
+    if (redirectPath) {
+      router.push(redirectPath);
+    }
+  },
   name: 'App', // Numele componentei
   components: {
     // Includerea componentelor ce vor fi utilizate în aplicație
