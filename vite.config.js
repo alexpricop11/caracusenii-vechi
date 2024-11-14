@@ -5,10 +5,10 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-    publicPath: '/caracusenii-vechi/',
     plugins: [
         vue(),
     ],
+    publicPath: '/caracusenii-vechi/',
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
