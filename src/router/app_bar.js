@@ -6,7 +6,7 @@ import History from "@/views/History.vue"
 import About from "@/views/About.vue";
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/caracusenii-vechi/', component: Home },
   { path: '/school', component: School },
   { path: '/location', component: Location },
   { path: '/history', component: History },

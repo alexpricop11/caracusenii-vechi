@@ -2,7 +2,7 @@
   <!-- Bara principală a aplicației cu o clasă condițională pentru starea meniului mobil -->
   <div class="app-bar" :class="{ 'mobile-open': isMobileMenuOpen }">
     <!-- Logo-ul, clickabil, direcționează către ruta de acasă -->
-    <router-link to="/" class="logo-container">
+    <router-link to="/caracusenii-vechi/" class="logo-container">
       <img src="@/assets/Flag_of_Moldova.svg.png" alt="Logo" class="app-logo"/>
     </router-link>
 
@@ -41,7 +41,7 @@ export default {
       isMobileMenuOpen: false,
       // Lista de linkuri de navigație
       links: [
-        {path: '/', label: 'PAGINA PRINCIPALĂ'},
+        {path: '/caracusenii-vechi/', label: 'PAGINA PRINCIPALĂ'},
         {path: '/school', label: 'ȘCOALA'},
         {path: '/location', label: 'LOCAȚII'},
         {path: '/history', label: 'ISTORIA'},
